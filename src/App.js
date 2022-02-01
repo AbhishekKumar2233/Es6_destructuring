@@ -15,12 +15,19 @@ export default function App() {
   // console.log(dogSound);
 
   //when you get nested array
-  const {
-    name,
-    sound,
-    requirement: { food, water }
-  } = dog;
-  console.log(food + water);
+  // const {
+  //   name,
+  //   sound,
+  //   requirement: { food, water }
+  // } = dog;
+  // console.log(food + water);
+
+  //if you want only food
+  //   const {
+
+  //   requirement: { food, water }
+  // } = dog;
+  // console.log(food + water);
 
   return <div className="App"></div>;
 }
