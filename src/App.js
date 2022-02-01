@@ -1,5 +1,5 @@
 import "./styles.css";
-import animals from "./data";
+import animals, { useAnimals } from "./data";
 import cars from "./Cars";
 
 export default function App() {
@@ -28,6 +28,13 @@ export default function App() {
   //   requirement: { food, water }
   // } = dog;
   // console.log(food + water);
+
+  //use of function
+  // console.log(useAnimals(cat));
+
+  const [animal, makeSound] = useAnimals(dog);
+  console.log(animal);
+  makeSound();
 
   return <div className="App"></div>;
 }
